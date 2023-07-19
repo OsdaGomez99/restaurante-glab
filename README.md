@@ -1,27 +1,59 @@
- # RestauranteGlab
+ # Gestión de Restaurante Glab
+Gestor de restaruante Glab realizado en Angular, para la prueba tecnica para GLab
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+## Requisitos Previos
+Asegúrate de tener instalados los siguientes componentes antes de comenzar:
 
-## Development server
+- AngularCLI >= 16.1
+- Node >= 18.16.0
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalación
+Sigue estos pasos para configurar el proyecto en tu entorno local:
 
-## Code scaffolding
+Clona este repositorio en tu máquina local:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+git clone https://github.com/OsdaGomez99/restaurante-glab.git
+```
 
-## Build
+Navega hasta la carpeta del proyecto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+cd restaurante-glab
+```
 
-## Running unit tests
+Instala Agular CLI (En caso de no tenerlo en el ordenador)
+```bash
+npm install -g @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instala las dependencias de Node:
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Inicia el servidor de Angular:
 
-## Further help
+```bash
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Uso
+Este aplicación, permite:
+- Visualizar el formulario de registro de reservas
+- Login de acceso al Panel de Administración
+- Panel de Administración de reservas
+
+## Créditos
+Realizado por: Osdalys Gómez
+
+Medellin, Colombia
+
+Julio 2023
+
+## Contacto
+- Correo Electrónico: osdalys.gomez99@hotmail.com
+- Teléfono: +573002158524
+- GitHub: **https://github.com/OsdaGomez99**
+- Linkedin: **https://www.linkedin.com/in/osdalys-gomez**
