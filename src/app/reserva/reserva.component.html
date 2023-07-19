@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="form">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit">
+        <div formGroupName="group">
+        <div class="row">
+          <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/128/2636/2636428.png" alt="Icon">
+          </div>
+        </div>
+        <div class="row">
+          <h1>Formulario de reserva</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" formControlName="nombres" placeholder="Nombres" required>
+            <div *ngIf="myForm.get('nombres')?.invalid && myForm.get('nombres')?.touched">
+              El nombre es requerido.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Apellidos" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <select required>
+              <option value="">Tipo de Documento</option>
+              <option value="1">DNI</option>
+              <option value="2">Pasaporte</option>
+              <option value="3">Cedula de ciudadania</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Numero de identificación" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" placeholder="Email" required>
+          </div>
+          <div class="col-md-6">
+            <input type="date" placeholder="Fecha de la reserva" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <select required>
+              <option value="">Tipo de reserva</option>
+              <option value="1">Cena</option>
+              <option value="2">Almuerzo</option>
+              <option value="3">Onces</option>
+              <option value="4">Cumpleaños</option>
+              <option value="5">Ocasión especial</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+              <input type="number" placeholder="Numero de personas" min="1" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <textarea name="" id="" cols="30" rows="10">Descripción y/o observaciones (Opcional)</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button>Reservar</button>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

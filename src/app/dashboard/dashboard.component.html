@@ -1,0 +1,146 @@
+<div class="body-content flex flex-column">
+    <main class="flex flex-column gap-3 grow">
+      <section class="flex gap-2 items-center justify-between">
+        <div id="bulkActions" class="bulk-actions hidden items-center">
+          <i class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                    d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+            </svg>
+          </i>
+
+          <small id="labelItemsSelected">0 items selected</small>
+
+          <i class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                    d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                    ></path>
+            </svg>
+          </i>
+        </div>
+
+        <h1 id="title" class="leading-none">Reservaciones</h1>
+
+        <div class="flex gap-1 items-center">
+          <button class="button icon link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+            </svg>
+          </button>
+          <button class="button icon link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                    d="M32,80a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H40A8,8,0,0,1,32,80Zm184,88H176V152a8,8,0,0,0-16,0v48a8,8,0,0,0,16,0V184h40a8,8,0,0,0,0-16Zm-80,0H40a8,8,0,0,0,0,16h96a8,8,0,0,0,0-16Zm-32-56a8,8,0,0,0,8-8V88H216a8,8,0,0,0,0-16H112V56a8,8,0,0,0-16,0v48A8,8,0,0,0,104,112Z"
+                    ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="flex flex-column gap-2">
+        <table>
+          <tr class="no-hover">
+            <th><span>Nombres</span></th>
+            <th><span>Apellidos</span></th>
+            <th><span>Tipo de Documento</span></th>
+            <th><span>Numero de Identificación</span></th>
+            <th><span>Email</span></th>
+            <th><span>Fecha de Reserva</span></th>
+            <th><span>Tipo de Reserva</span></th>
+            <th><span>Cantidad de Personas</span></th>
+            <th><span>Estado</span></th>
+          </tr>
+
+          <tr>
+            <td>Luis</td>
+            <td>Perez</td>
+            <td>Cedula de Ciudadania</td>
+            <td>1234567890</td>
+            <td>lperez@mozilla.com</td>
+            <td>14-07-2023</td>
+            <td>Cumpleaños</td>
+            <td>4</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>Maria</td>
+            <td>González</td>
+            <td>CI</td>
+            <td>87654321</td>
+            <td>mgonzalez@example.com</td>
+            <td>18-07-2023</td>
+            <td>Aniversario</td>
+            <td>2</td>
+            <td>Confirmada</td>
+          </tr>
+          <tr>
+            <td>Pablo</td>
+            <td>Ramirez</td>
+            <td>Pasaporte</td>
+            <td>98765432</td>
+            <td>pramirez@example.com</td>
+            <td>20-07-2023</td>
+            <td>Almuerzo</td>
+            <td>3</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>Martinez</td>
+            <td>DNI</td>
+            <td>56789012</td>
+            <td>amartinez@example.com</td>
+            <td>22-07-2023</td>
+            <td>Cena</td>
+            <td>5</td>
+            <td>Cancelada</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>López</td>
+            <td>Pasaporte</td>
+            <td>54321098</td>
+            <td>clopez@example.com</td>
+            <td>24-07-2023</td>
+            <td>Desayuno</td>
+            <td>1</td>
+            <td>Confirmada</td>
+          </tr>
+        </table>
+
+        <section class="flex items-center justify-between">
+          <small class="muted">1-10 / 123 items</small>
+
+          <div class="flex gap-2 items-center">
+            <div class="flex gap-05 items-center">
+              <input class="input number small" readonly type="number" value="1" />
+              <small class="muted">/</small>
+              <small class="muted">13 pages</small>
+            </div>
+
+            <div class="flex gap-05 items-center">
+              <button class="button icon link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#247783" viewBox="0 0 256 256">
+                  <path
+                        d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+                        ></path>
+                </svg>
+              </button>
+
+              <button class="button icon link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#247783" viewBox="0 0 256 256">
+                  <path
+                        d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+                        ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
